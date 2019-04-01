@@ -18,10 +18,10 @@
     disable_publish_on_pr: true
 
   build_script:
-    - cmd: dotnet pack -c Release --output output
+    - cmd: dotnet pack src/hash-identity/hash-identity.csproj -c Release --output output
 
   test_script:
-    - cmd: dotnet test
+    - cmd: dotnet test test/hash-identity.Tests/hash-identity.Tests.csproj
 
   artifacts:
     - path: 'output\**\*.nupkg'
