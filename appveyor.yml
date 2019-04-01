@@ -24,8 +24,8 @@
     - cmd: dotnet test test/hash-identity.Tests/hash-identity.Tests.csproj
 
   artifacts:
-    - path: 'output\**\*.nupkg'
-    - path: 'output\**\*.snupkg'
+    - path: 'src\hash-identity\output\**\*.nupkg'
+    - path: 'src\hash-identity\output\**\*.snupkg'
 
   dotnet_csproj:
     patch: true
