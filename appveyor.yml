@@ -12,7 +12,7 @@
 -
   version: 1.0.{build}
   image:
-    - Visual Studio 2017
+    - Ubuntu1604
 
   nuget:
     disable_publish_on_pr: true
