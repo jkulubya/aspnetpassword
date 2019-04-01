@@ -21,7 +21,7 @@
     - cmd: dotnet pack src/hash-identity/hash-identity.csproj -c Release --output output
 
   test_script:
-    - cmd: dotnet test
+    - cmd: dotnet test test/hash-identity.Tests/hash-identity.Tests.csproj
 
   artifacts:
     - path: 'output\**\*.nupkg'
