@@ -24,8 +24,8 @@
     - cmd: dotnet test
 
   artifacts:
-    - path: 'src\hash-identity\output\**\*.nupkg'
-    - path: 'src\hash-identity\output\**\*.snupkg'
+    - path: 'output\**\*.nupkg'
+    - path: 'output\**\*.snupkg'
 
   dotnet_csproj:
     patch: true
